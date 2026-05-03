@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_primary"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:cardCornerRadius="24dp"
+        app:cardBackgroundColor="#33FFFFFF">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="MoodStudy Logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/moodstudy" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="MoodStudy"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Belajar sesuai mood kamu"
+        android:textColor="#CCFFFFFF"
+        android:textSize="15sp"/>
+
+    <ProgressBar
+        android:layout_width="80dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="48dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#FFFFFF"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+</LinearLayout>

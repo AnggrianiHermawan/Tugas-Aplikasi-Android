@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "19208435539",
+    "project_id": "moodstudy-c95f2",
+    "storage_bucket": "moodstudy-c95f2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19208435539:android:a84afe04d9a409dd6e13a6",
+        "android_client_info": {
+          "package_name": "com.moodstudy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8fTv3fyU1KaV8saHfegfv7ODsCQjlxZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

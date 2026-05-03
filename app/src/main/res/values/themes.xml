@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MoodStudy" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryVariant">@color/purple_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple_soft</item>
+        <item name="colorOnSecondary">@color/purple_dark</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="android:colorBackground">@color/bg_light</item>
+        <item name="android:windowBackground">@color/bg_light</item>
+        <item name="android:statusBarColor">@color/purple_primary</item>
+    </style>
+
+    <style name="Theme.MoodStudy.Splash" parent="Theme.MoodStudy">
+        <item name="android:windowBackground">@color/purple_primary</item>
+        <item name="android:statusBarColor">@color/purple_primary</item>
+        <item name="android:navigationBarColor">@color/purple_primary</item>
+    </style>
+</resources>

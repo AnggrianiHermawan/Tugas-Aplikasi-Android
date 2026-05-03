@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="horizontal"
+    android:background="@color/surface_light"
+    android:elevation="8dp">
+
+    <LinearLayout android:id="@+id/navBeranda"
+        android:layout_width="0dp" android:layout_height="match_parent"
+        android:layout_weight="1" android:orientation="vertical"
+        android:gravity="center" android:padding="4dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🏠" android:textSize="20sp" android:gravity="center"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Beranda" android:textSize="11sp" android:textColor="@color/purple_primary"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/navRiwayat"
+        android:layout_width="0dp" android:layout_height="match_parent"
+        android:layout_weight="1" android:orientation="vertical"
+        android:gravity="center" android:padding="4dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🕐" android:textSize="20sp" android:gravity="center"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Riwayat" android:textSize="11sp" android:textColor="@color/text_muted"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/navGrafik"
+        android:layout_width="0dp" android:layout_height="match_parent"
+        android:layout_weight="1" android:orientation="vertical"
+        android:gravity="center" android:padding="4dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="📊" android:textSize="20sp" android:gravity="center"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Grafik" android:textSize="11sp" android:textColor="@color/text_muted"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/navProfil"
+        android:layout_width="0dp" android:layout_height="match_parent"
+        android:layout_weight="1" android:orientation="vertical"
+        android:gravity="center" android:padding="4dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="👤" android:textSize="20sp" android:gravity="center"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Profil" android:textSize="11sp" android:textColor="@color/text_muted"/>
+    </LinearLayout>
+</LinearLayout>

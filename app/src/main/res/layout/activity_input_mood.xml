@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_light">
+
+    <!-- Toolbar -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:paddingStart="8dp" android:paddingEnd="16dp"
+        android:background="@color/surface_light" android:elevation="2dp">
+        <Button android:id="@+id/btnBack"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="← Kembali"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/purple_primary"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Input Mood"
+            android:textSize="16sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:gravity="center"/>
+        <View android:layout_width="80dp" android:layout_height="1dp"/>
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Pilih Mood Kamu Hari Ini"
+                android:textSize="20sp" android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Pilih sesuai perasaan yang kamu rasakan"
+                android:textSize="13sp" android:textColor="@color/text_muted"
+                android:layout_marginTop="4dp" android:layout_marginBottom="16dp"/>
+
+            <!-- ✅ TOMBOL SCAN WAJAH BARU -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnScanWajah"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:text="📷  Scan Wajah Otomatis"
+                android:textColor="@color/purple_primary"
+                app:strokeColor="@color/purple_primary"
+                app:strokeWidth="1dp"
+                app:cornerRadius="12dp"
+                app:backgroundTint="@android:color/transparent"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+            <!-- Baris 1: Semangat, Biasa, Capek -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="12dp">
+
+                <androidx.cardview.widget.CardView android:id="@+id/cardSemangat"
+                    android:layout_width="0dp" android:layout_height="90dp"
+                    android:layout_weight="1" android:layout_marginEnd="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="1dp"
+                    app:cardBackgroundColor="@color/surface_light">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:orientation="vertical" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🔥" android:textSize="28sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Semangat" android:textSize="12sp" android:textStyle="bold"
+                            android:textColor="@color/text_muted" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView android:id="@+id/cardBiasa"
+                    android:layout_width="0dp" android:layout_height="90dp"
+                    android:layout_weight="1" android:layout_marginStart="6dp" android:layout_marginEnd="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="1dp"
+                    app:cardBackgroundColor="@color/surface_light">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:orientation="vertical" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="😐" android:textSize="28sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Biasa" android:textSize="12sp" android:textStyle="bold"
+                            android:textColor="@color/text_muted" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView android:id="@+id/cardCapek"
+                    android:layout_width="0dp" android:layout_height="90dp"
+                    android:layout_weight="1" android:layout_marginStart="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="1dp"
+                    app:cardBackgroundColor="@color/surface_light">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:orientation="vertical" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="😴" android:textSize="28sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Capek" android:textSize="12sp" android:textStyle="bold"
+                            android:textColor="@color/text_muted" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Baris 2: Stres, Bosan -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="24dp">
+                <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="0.5"/>
+                <androidx.cardview.widget.CardView android:id="@+id/cardStres"
+                    android:layout_width="0dp" android:layout_height="90dp"
+                    android:layout_weight="1" android:layout_marginEnd="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="1dp"
+                    app:cardBackgroundColor="@color/surface_light">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:orientation="vertical" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="😣" android:textSize="28sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Stres" android:textSize="12sp" android:textStyle="bold"
+                            android:textColor="@color/text_muted" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/cardBosan"
+                    android:layout_width="0dp" android:layout_height="90dp"
+                    android:layout_weight="1" android:layout_marginStart="6dp"
+                    app:cardCornerRadius="16dp" app:cardElevation="1dp"
+                    app:cardBackgroundColor="@color/surface_light">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:orientation="vertical" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="😑" android:textSize="28sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Bosan" android:textSize="12sp" android:textStyle="bold"
+                            android:textColor="@color/text_muted" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="0.5"/>
+            </LinearLayout>
+
+            <!-- Catatan -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Catatan (opsional)" android:textSize="14sp" android:textStyle="bold"
+                android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusTopStart="12dp" app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp" app:boxCornerRadiusBottomEnd="12dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCatatan"
+                    android:layout_width="match_parent" android:layout_height="120dp"
+                    android:hint="Ceritakan sedikit tentang mood kamu..."
+                    android:inputType="textMultiLine"
+                    android:maxLength="100"
+                    android:gravity="top"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView android:id="@+id/tvCharCount"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="0/100" android:textSize="12sp" android:textColor="@color/text_faint"
+                android:gravity="end" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Button -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="16dp" android:background="@color/surface_light" android:elevation="4dp">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:text="💾 Simpan Mood"
+            android:backgroundTint="@color/purple_primary"
+            app:cornerRadius="12dp"/>
+    </LinearLayout>
+</LinearLayout>
