@@ -28,15 +28,16 @@ Scan Wajah Otomatis (Deteksi Mood Wajah): Fitur inovatif yang memanfaatkan kamer
 Halaman ini adalah hasil output dari mood yang telah diinputkan. Aplikasi akan memberikan saran produktivitas yang disesuaikan dengan perasaan pengguna. Contohnya, jika mood sedang "Semangat" (🔥), aplikasi akan menyarankan untuk mengerjakan tugas paling sulit dulu dan menggunakan teknik Pomodoro.
 <img width="720" height="1482" alt="ai" src="https://github.com/user-attachments/assets/159a7f55-8bd0-449c-b0d2-1aea44bbb06a" />
 
-6. Riwayat Mood (History)
+## 6. Riwayat Mood (History)
 Halaman yang menampilkan rekam jejak perasaan pengguna dari hari ke hari. Menampilkan tanggal, jam pengisian, serta ikon mood yang dirasakan saat itu.
+<img width="720" height="1489" alt="rwyt" src="https://github.com/user-attachments/assets/ce2910b0-f792-4947-a88a-64e6e0fd899c" />
 
-7. Grafik & Statistik Mood
+## 7. Grafik & Statistik Mood
 Halaman analitik untuk memantau perkembangan emosi pengguna.
-
 Grafik: Menampilkan visualisasi garis perkembangan mood yang bisa difilter berdasarkan rentang waktu "Mingguan" atau "Bulanan".
-
 Statistik: Menampilkan ringkasan data berupa Mood Terbanyak, Hari Terbaik untuk produktivitas, Total Catatan, dan jumlah Streak Harian.
+<img width="720" height="1493" alt="grfk" src="https://github.com/user-attachments/assets/5260a306-4133-4a96-a4cd-79a4becd6ca0" />
 
-8. Profil (Settings)
+## 8. Profil (Settings)
 Halaman pengaturan yang memuat informasi akun pengguna (inisial, nama, email). Di sini pengguna juga dapat mengaktifkan/menonaktifkan toggle Notifikasi Harian, melihat halaman Tentang Aplikasi, serta tombol untuk Keluar (Logout) dari akun.
+<img width="720" height="1488" alt="prof" src="https://github.com/user-attachments/assets/dae8c569-3a4d-4b2e-a0f0-6522bd2b0c9c" />
