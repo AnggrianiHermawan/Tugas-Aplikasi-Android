@@ -41,3 +41,7 @@ Statistik: Menampilkan ringkasan data berupa Mood Terbanyak, Hari Terbaik untuk 
 ## 8. Profil (Settings)
 Halaman pengaturan yang memuat informasi akun pengguna (inisial, nama, email). Di sini pengguna juga dapat mengaktifkan/menonaktifkan toggle Notifikasi Harian, melihat halaman Tentang Aplikasi, serta tombol untuk Keluar (Logout) dari akun.
 <img width="720" height="1488" alt="prof" src="https://github.com/user-attachments/assets/dae8c569-3a4d-4b2e-a0f0-6522bd2b0c9c" />
+
+## Link ClickUp: https://sharing.clickup.com/90181807975/b/h/4-901810635245-2/95784e728c431a6
+
+## Link YouTube Demo Aplikasi (Jika diperlukan): https://youtube.com/shorts/88x6_Y4gbE0?si=u9NMSbxb-F3PY4yV
